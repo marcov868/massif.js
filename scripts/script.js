@@ -12,7 +12,7 @@ function rightUnit(base, bytes) {
 application.controller("MassifVisualizeController", [function() {
     // init
     var scope = this;
-    // scope.source = "";
+    scope.source = document.getElementById("massif_file").value;
     // events
     scope.process = function() {
         var parsed = Massifjs.parse(scope.source);
